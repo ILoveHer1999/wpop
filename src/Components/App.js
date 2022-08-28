@@ -13,7 +13,6 @@ function App() {
   const {
     seconds,
     minutes,
-    isRunning,
     start,
     pause,
     reset,
@@ -46,7 +45,7 @@ function App() {
   const [gameStart, setGameStart] = useState(true)
   const [highScore, setHighScore] = useState(localStorage.getItem('highScore') === null ? 0 : parseInt(localStorage.getItem('highScore')))
 
-  //console.log(popArray)
+
 
   useEffect(() => {
 
@@ -56,7 +55,7 @@ function App() {
     if (allHeld && allName) {
       setGameState(true)
       setGameStart(false)
-      console.log('You won!')
+
     }
   }, [popArray])
 
@@ -74,8 +73,7 @@ function App() {
         localStorage.setItem('highScore', JSON.stringify(score))
       }
 
-      console.log(endSeconds, 'end Seconds')
-      console.log(endMinutes, 'end Minutes in Seconds')
+
     }
     else {
       reset()
@@ -98,10 +96,8 @@ function App() {
   function holdPop(id) {
     setPopArray(oldArray => oldArray.map(pop => {
       if (pop.id === id) {
-        console.log(pop.id)
         return { ...pop, isHeld: !pop.isHeld }
       } else {
-        console.log('nothing')
         return pop
       }
     }))
