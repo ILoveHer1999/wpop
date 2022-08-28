@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+
+body {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  background-color: #3c1361;
+  color: white;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pop-container {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  column-gap: 20px;
+  row-gap: 20px;
+  background-color: #52307c;
+  padding: 80px;
+  border-radius: 30%;
+}
+
+/* CSS */
+.button-44 {
+  background: HSL(114, 96.1%, 50%);
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 33.4929px;
+  padding: .8em 1em;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-shadow: rgba(0, 0, 0, .3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  word-break: break-word;
+  border: 0;
+  margin-top: 20px;
+}
+
+
+.button-div {
+  display: flex;
+  align-items: center;
+}
+
+.best-time {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+span {
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
+a {
+  color: white;
+}
+
+.button-44:hover {
+  border-bottom-style: none;
+  border-color: #dadada;
+}
+
+@media(max-width: 1300px) {
+  .pop-container {
+    grid-template-columns: repeat(4, 170px);
+  }
+
+  div.pop-container div:nth-child(9) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+
+}
+
+@media(max-width: 770px) {
+  .pop-container {
+    grid-template-columns: repeat(2, 170px);
+  }
+
+  div.pop-container div:nth-child(9) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+}
+
+@media(max-width: 415px) {
+  .pop-container {
+    grid-template-columns: repeat(2, 150px);
+  }
+
+
+}

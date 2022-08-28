@@ -1,0 +1,29 @@
+.pop-square img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+img:hover {
+    cursor: pointer;
+
+}
+
+@media(max-width: 1300px) {
+    .pop-square img {
+        width: 170px;
+        height: 170px;
+    }
+
+
+}
+
+@media(max-width: 415px) {
+    .pop-square img {
+        width: 150px;
+        height: 150px;
+    }
+
+
+}
